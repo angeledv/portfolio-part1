@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+body {
+    margin: 0;
+    padding: 30px 100px 0 100px;
+    background-color: #FFF7F0;
+    color: #030303;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 64px;
+    aspect-ratio: 1/1;
+}
+
+.call-to-action {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 45px;
+    border-radius: 80px;
+}
+
+.text-content {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+h1 {
+    font-size: 56px;
+    margin-block-end: 22px;
+}
+
+p {
+    color: #7A746E;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.image-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 24px;
+}
+
+.image-container a {
+    padding: 24px;
+    aspect-ratio: 6/7;
+    background-color: lavender;
+    border-radius: 8px;
+    flex-basis: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+
+.image-container a h2 {
+    margin: 0;
+    font-size: 1.6vw;
+}
+
+.image-container a img {
+    justify-self: end;
+}
+
+#graphic-design {
+    background-color: #755CDE;
+}
+
+#graphic-design img {
+    width: clamp(128px, 46%, 230px);
+    height: clamp(192px, 72%, 480px);
+}
+
+#ilustration {
+    background-color: #EB7565;
+}
+
+#ilustration img {
+    width: clamp(230px, 80%, 480px);
+    height: clamp(110px, 40%, 240px);
+}
+
+#photography {
+    background-color: #61C4B7;
+}
+
+#photography img {
+    width: clamp(87px, 32%, 160px);
+    height: clamp(217px, 76%, 420px);
+   
+}
+
+#hero {
+    margin-bottom: 136px;
+}
+
+#about-me {
+    display: flex;
+    gap: 127px;
+    margin-block-end: 87px;
+}
+
+#about-me img {
+    width: 445px;
+    aspect-ratio: 1;
+}
+
+#about-me h2 {
+    font-size: 40px;
+    margin: 0;
+    margin-block-end: 34px;
+}
+
+#skills {
+    margin: auto;
+}
+
+#skills .call-to-action {
+    background-color: #EB7565;
+    margin-block-start: 32px;
+}
