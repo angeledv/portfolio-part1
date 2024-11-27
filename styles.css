@@ -99,7 +99,7 @@ p {
 }
 
 #hero {
-    margin-bottom: 136px;
+    margin-bottom: 137px;
 }
 
 #about-me {
@@ -130,9 +130,8 @@ p {
     margin-block-end: 32px;
 }
 
-
 #skills .call-to-action {
     background-color: #EB7565;
     margin: 0;
-    max-width: fit-content;
+    align-self: flex-start;
 }
