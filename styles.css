@@ -16,7 +16,7 @@ nav {
 
 nav img {
     width: 64px;
-    aspect-ratio: 1/1;
+    aspect-ratio: 1;
 }
 
 .call-to-action {
@@ -34,69 +34,68 @@ nav img {
 }
 
 h1 {
-    font-size: 56px;
+    font-size: 3.5rem;
     margin-block-end: 22px;
 }
 
 p {
     color: #7A746E;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 28px;
 }
 
 .image-container {
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 354px;
     gap: 24px;
 }
 
-.image-container a {
+.card {
     padding: 24px;
-    aspect-ratio: 6/7;
-    background-color: lavender;
     border-radius: 8px;
-    flex-basis: 100%;
     text-decoration: none;
     color: #fff;
     display: grid;
     grid-template-rows: 1fr auto;
 }
 
-.image-container a h2 {
-    margin: 0;
-    font-size: 1.6vw;
-}
-
-.image-container a img {
+.card img {
+    display: block;
+    max-width: 100%;
     justify-self: end;
 }
 
-#graphic-design {
+.card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.graphic-design {
     background-color: #755CDE;
 }
 
-#graphic-design img {
-    width: clamp(128px, 46%, 230px);
-    height: clamp(192px, 72%, 480px);
+.graphic-design img {
+    width: 128px;
+    height: 192px;
 }
 
-#ilustration {
+.ilustration {
     background-color: #EB7565;
 }
 
-#ilustration img {
-    width: clamp(230px, 80%, 480px);
-    height: clamp(110px, 40%, 240px);
+.ilustration img {
+    width: 230px;
+    height: 115px;
 }
 
-#photography {
+.photography {
     background-color: #61C4B7;
 }
 
-#photography img {
-    width: clamp(87px, 32%, 160px);
-    height: clamp(217px, 76%, 420px);
-   
+.photography img {
+    width: 86px;
+    height: 216px;
 }
 
 #hero {
@@ -106,7 +105,7 @@ p {
 #about-me {
     display: flex;
     gap: 127px;
-    margin-block-end: 87px;
+    margin-bottom: 87px;
 }
 
 #about-me img {
@@ -114,17 +113,26 @@ p {
     aspect-ratio: 1;
 }
 
-#about-me h2 {
-    font-size: 40px;
+#skills {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
     margin: 0;
     margin-block-end: 34px;
 }
 
-#skills {
-    margin: auto;
+#skills p {
+    margin: 0;
+    margin-block-end: 32px;
 }
+
 
 #skills .call-to-action {
     background-color: #EB7565;
-    margin-block-start: 32px;
+    margin: 0;
+    max-width: fit-content;
 }
